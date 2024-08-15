@@ -13,7 +13,6 @@ The goal of this project is to create an automated system that can:
 - Collect metrics on fight performance, such as control time and strike effectiveness.
 
 **Features**
-
 - Object Detection: Detect and track fighters in video frames.
 - Pose Estimation: Analyze keypoints on fighters' bodies to understand their movements.
 - Action Recognition: Classify actions (e.g., punches, kicks, takedowns) from video sequences.
@@ -26,8 +25,18 @@ The goal of this project is to create an automated system that can:
 
 **Run Pipeline**
 
-**Training Models**
+Install dependencies:
+pip install -r requirements.txt
 
+Extract frames from video:
+python src/data_processing/extract_frames.py
+
+Perform image detection using YOLO on the frames:
+python src/detection/yolo_detector.py
+
+View the results under detection_results folder
+
+**Training Models**
 jupyter notebook notebooks/model_training.ipynb
 
 **Data**
