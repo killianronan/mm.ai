@@ -23,7 +23,9 @@ The goal of this project is to create an automated system that can:
 - TensorFlow for deep learning.
 - OpenCV for video processing.
 
-**Run Pipeline**
+**Steps to Run Pipeline**
+Download the YOLO weights file from: https://github.com/patrick013/Object-Detection---Yolov3/blob/master/model/yolov3.weights.
+Add the downloaded file to the models/yolo folder, this file is too large to push to Github (250MB, limit is 100MB).
 
 Install dependencies:
 pip install -r requirements.txt
